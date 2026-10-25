@@ -1,0 +1,6 @@
+// Built-in functions + string concatenation
+print(len("aether"));          // 6
+print("ae" + "ther");          // aether
+print("n = " + 42);            // n = 42
+print(int("7") + 1);           // 8
+print(type(1), type("s"), type(nil)); // int string nil

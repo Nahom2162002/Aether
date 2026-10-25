@@ -1,0 +1,11 @@
+// Variables, arithmetic, print
+let x = 2 + 3 * 4;
+print(x);              // 14
+print((2 + 3) * 4);    // 20
+print(17 % 5);         // 2
+print(x > 10);         // true
+print(!true);          // false
+x = x - 4;
+print(x);              // 10
+print("hello");        // hello
+print("x is", x);      // x is 10

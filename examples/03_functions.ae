@@ -1,0 +1,18 @@
+// M3: functions, recursion, closures
+fn fib(n) {
+    if n < 2 { return n; }
+    return fib(n - 1) + fib(n - 2);
+}
+print(fib(10));        // 55
+
+fn make_counter() {
+    let count = 0;
+    fn next() {
+        count = count + 1;
+        return count;
+    }
+    return next;
+}
+let counter = make_counter();
+print(counter());      // 1
+print(counter());      // 2

@@ -1,0 +1,18 @@
+// Blocks, if / else if / else, while, && and ||
+let i = 0;
+while i < 3 {
+    print(i);          // 0 1 2
+    i = i + 1;
+}
+
+let n = 15;
+if n % 15 == 0 {
+    print("FizzBuzz");
+} else if n % 3 == 0 {
+    print("Fizz");
+} else {
+    print(n);
+}                      // FizzBuzz
+
+print(true && false);  // false
+print(nil || "default"); // default

@@ -1,0 +1,15 @@
+// Inheritance and super
+class Animal {
+    fn init(name) { self.name = name; }
+    fn speak() { return self.name + " makes a sound"; }
+}
+
+class Dog < Animal {
+    fn speak() { return super.speak() + ", specifically a bark"; }
+    fn fetch() { return self.name + " fetches!"; }
+}
+
+let rex = Dog("Rex");
+print(rex.speak());    // Rex makes a sound, specifically a bark
+print(rex.fetch());    // Rex fetches!
+print(type(rex));      // Dog
